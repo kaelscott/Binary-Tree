@@ -28,7 +28,6 @@ public class BinaryTree {
         return root;
     }
 
-
     public String morseToChar(Node morseTree, String sequence, int i) {
         if (i == sequence.length()) {
             return morseTree.data;

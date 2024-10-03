@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         BinaryTree morseTree = new BinaryTree();
@@ -31,7 +33,12 @@ public class Main {
 
         morseTree.printTree();
 
-        String result = morseTree.decodeMorse(".- -... -.-.");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o código morse(espaço = '/'):"); // ... --- ... (SOS)   ||   ... / --- / ... (S O S)
+
+        String morseInput = scanner.nextLine();
+        String result = morseTree.decodeMorse(morseInput);
         System.out.println("Decodificado: " + result);
+        scanner.close();
     }
 }
