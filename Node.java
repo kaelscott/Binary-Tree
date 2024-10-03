@@ -4,10 +4,8 @@ public class Node {
     public Node right;
 
     public Node(String data) {
-        this.data = String.valueOf(data);
+        this.data = data;
         this.left = null;
         this.right = null;
     }
-
-
 }
